@@ -1,11 +1,15 @@
 .side-ber
   .side-ber__user-name
     .top-items
-      .top-items__name
-        masa
-      .top-items__icons
-        = icon('far', 'edit', class: 'top-items__icons-btn')
-        = icon('far', 'cog', class: 'top-items__icons-btn')
+      %h3.top-items__name
+        = current_user.name
+      %ul.top-items__iconlist
+        %li.top-items__iconlist__icona
+          =link_to '#' do
+            = icon('far', 'edit', class: 'top-items__iconlist__icona-btna')
+        %li.top-items__iconlist__iconb
+          =link_to edit_user_path(current_user) do
+            = icon('far', 'cog', class: 'top-items__iconlist__iconb-btnb')
   .side-ber__group-list
     .groups
       .groups__group-name
