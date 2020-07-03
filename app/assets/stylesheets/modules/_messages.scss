@@ -23,14 +23,23 @@
           font-size: 16px;
           font-weight: bold;
         }
-        &__icons {
+        &__iconlist{
           width: 60px;
           display: flex;
           justify-content: flex-end;
-          &-btn {
+          margin-left: 5px;
+          color: #ffffff;
+          text-decoration: none;
+          &__icona {
+            &-btna {
+              color: #fff;
+            }
+          }
+          &__iconb {
             margin-left: 5px;
-            color: #ffffff;
-            text-decoration: none;
+            &-btnb {
+              color: #fff;
+            }
           }
         }
       }
