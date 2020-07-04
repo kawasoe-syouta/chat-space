@@ -20,4 +20,5 @@
   .SettingGroupForm__field
     .SettingGroupForm__leftField
     .SettingGroupForm__rightField
-      = f.submit class: 'SettingGroupForm__button'
+      = link_to 'messages' do
+        = f.submit class: 'SettingGroupForm__button'
