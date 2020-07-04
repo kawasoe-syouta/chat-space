@@ -3,7 +3,7 @@
 }
 .wrapper {
   display: flex;
-  .side-ber {
+  .side-bar {
     width: 300px;
     height: 100vh;
     background-color: #253141;
@@ -54,6 +54,8 @@
         padding: 20px 20px 40px 20px;
         &__group-name {
           font-size: 15px;
+          color: #ffffff;
+          text-decoration: none;
         }
         &__group-message {
           font-size: 11px;
